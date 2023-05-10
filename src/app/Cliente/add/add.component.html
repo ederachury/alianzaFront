@@ -1,0 +1,37 @@
+ 
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-header">
+            <h3>Add Client</h3>
+            <div class="card-body">
+
+                <form #userlogin = "ngForm" (ngSubmit) = "onClickSubmit(userlogin.value)" >                          
+                    <div class="form-group mb-3">
+                        <label for="sharedkey" class="form-label">Shared Key</label>
+                        <input  type="text" class="form-control" id="sharedkey" name="sharedkey" ngModel> 
+                    </div>
+                    <div class=" form-group mb-3">
+                        <label for="businessid" class="form-label">Business Id</label>
+                        <input #businessid type="text" class="form-control" name="businessid" id="businessid" ngModel> 
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input #email type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" ngModel>
+                        <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="phone" class="form-label">Phone</label>
+                        <input #phone type="tel" class="form-control" id="phone" name="phone" aria-describedby="phone" ngModel> 
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="dataadded" class="form-label">Data Added</label>
+                        <input  #dataadded type="date" class="form-control" id="dataadded" name="dataadded" ngModel/>
+                    </div>
+                    <input type = "submit" value = "submit">                       
+                </form>                
+
+            </div>
+        </div>
+    </div>
+</div>
+
